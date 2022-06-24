@@ -3,10 +3,28 @@
 @tailwind utilities;
 
 @layer components {
+    body{
+        @apply text-sm;
+    }
+    .section{
+        @apply lg:w-2/3 lg:mx-auto px-4 md:px-9 lg:px-14 ;
+    }
+    .page__title{
+        @apply text-4xl font-bold;
+    }
+    .section__title{
+        @apply text-xl leading-8 font-bold;
+    }
+    .section__sub__title{
+        @apply text-sm text-black font-bold my-3;
+    }
     p{
         @apply text-sm my-3;
     }
+    ul{
+        @apply list-disc px-10;
+    }
     a{
-        @apply text-sm underline font-medium text-[#0000FF];
+        @apply text-sm text-[#0000ff] underline font-semibold; 
     }
 }
