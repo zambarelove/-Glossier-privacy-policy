@@ -6,11 +6,14 @@
     body{
         @apply text-sm;
     }
-    .section{
-        @apply lg:w-2/3 lg:mx-auto px-4 md:px-9 lg:px-14 ;
+    .page__wrapper{
+        @apply  lg:w-2/3 lg:mx-auto px-4 md:px-9 lg:px-14 ;
+    }
+    .page__header{
+        @apply py-12;
     }
     .page__title{
-        @apply text-4xl font-bold;
+        @apply text-4xl font-bold capitalize;
     }
     .section__title{
         @apply text-xl leading-8 font-bold;
@@ -22,9 +25,12 @@
         @apply text-sm my-3;
     }
     ul{
-        @apply list-disc px-10;
-    }
+        @apply list-disc pl-10 sm:px-10;}
     a{
-        @apply text-sm text-[#0000ff] underline font-semibold; 
+        @apply text-sm text-[#0000ff] underline font-semibold break-words; 
     }
+    th, td{
+        @apply py-1;
+    }
+    
 }
